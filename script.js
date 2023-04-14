@@ -37,22 +37,22 @@
 // у змінну message записується рядок "Not enough goods in stock!".
 // В іншому випадку записується рядок "Order is processed, our manager will contact you.".
 
-//function checkStorage(available, ordered) {
-//    let message;
+function checkStorage(available, ordered) {
+    let message;
     // Change code below this line
-//    if (available > ordered) {
-//        message = "Order is processed, our manager will contact you."
+    if (available < ordered) {
+        message = "Not enough goods in stock!"
      
-//    } else {
-//        message = "Not enough goods in stock!"
-//    }
-//    console.log(message);
+    } else {
+        message = "Order is processed, our manager will contact you."
+    }
+    console.log(message);
     // Change code above this line
-//    return message;
-//}
+    return message;
+}
 
- //checkStorage(100, 50);
- //checkStorage(100, 130);
- //checkStorage(200, 20);
- //checkStorage(200, 150);
+ checkStorage(100, 50);
+ checkStorage(100, 130);
+ checkStorage(200, 20);
+ checkStorage(200, 150);
 // .............................
